@@ -1,0 +1,92 @@
+.car__item {
+  border: 1px solid #00000065;
+  padding: 20px;
+  border-radius: 5px;
+  color: black;
+}
+
+.car__item-info span i {
+  color: #f9a826;
+  font-size: 19px;
+}
+
+.car__item-btn {
+  display: block;
+  position: relative;
+  border: none;
+  outline: none;
+  background: #000d6b;
+  color: white;
+  padding: 8px 0px;
+  border-radius: 4px;
+}
+
+.car__item-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.car__item-btn:hover {
+  background: #081db7;
+  color: #fff;
+}
+
+.car__img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.car__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.car__item-content h4 {
+  font-size: 29px;
+}
+
+.car__item-content h6 {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 992px) {
+  .car__item h4 {
+    font-size: 17px;
+    margin-bottom: 0;
+  }
+
+  .car__item h6 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .car__item-info {
+    flex-wrap: wrap;
+  }
+
+  .car__item-info span {
+    font-size: 13px;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .car__item h4 {
+    font-size: 16px;
+  }
+
+  .car__item h6 {
+    font-size: 15px;
+  }
+
+  .car__item-info span {
+    font-size: 14px;
+  }
+
+  .car__item-info span i {
+    font-size: 16px;
+  }
+}

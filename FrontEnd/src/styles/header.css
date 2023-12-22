@@ -1,0 +1,66 @@
+.header__top {
+  padding: 10px 0px;
+  background: #000d6b;
+  color: #fff;
+}
+
+.header__top__right a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.header__top__right a:hover {
+  color: #f9a826;
+}
+
+.main__navbar {
+  padding: 15px 0px;
+  background: #000d6b;
+}
+
+.nav__item {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav__item:hover {
+  color: #f9a826;
+}
+
+.nav__active {
+  color: #f9a826;
+}
+
+.header__logout-btn {
+  width: 10%;
+  background-color: #081db7;
+  color: #fff;
+  border: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header__logout-btn:hover {
+  background-color: #0520ed;
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .header__top,
+  .nav__right {
+    display: none;
+  }
+
+  .navigation {
+    background: rgba(0, 13, 107, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: none;
+  }
+}
