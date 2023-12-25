@@ -1,5 +1,6 @@
 ﻿using AquaCars.DTOs.CategoryDTOs;
 using AquaCars.Services.Interfaces;
+using AquaCars.Utility.StaticData;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,7 +8,7 @@ namespace AquaCars.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [Authorize("Admin")]
+    [Authorize(Roles = UserRoles.Admin)]
     public class CategoryController : Controller
     {
         private readonly ICategoryService _categoryService;

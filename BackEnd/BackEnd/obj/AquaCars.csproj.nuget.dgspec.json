@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\38349\\source\\repos\\AquaCars\\BackEnd\\BackEnd\\AquaCars.csproj": {}
+    "C:\\Users\\38349\\Documents\\GitHub\\Aqua-Cars\\BackEnd\\BackEnd\\AquaCars.csproj": {}
   },
   "projects": {
-    "C:\\Users\\38349\\source\\repos\\AquaCars\\BackEnd\\BackEnd\\AquaCars.csproj": {
+    "C:\\Users\\38349\\Documents\\GitHub\\Aqua-Cars\\BackEnd\\BackEnd\\AquaCars.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\38349\\source\\repos\\AquaCars\\BackEnd\\BackEnd\\AquaCars.csproj",
+        "projectUniqueName": "C:\\Users\\38349\\Documents\\GitHub\\Aqua-Cars\\BackEnd\\BackEnd\\AquaCars.csproj",
         "projectName": "AquaCars",
-        "projectPath": "C:\\Users\\38349\\source\\repos\\AquaCars\\BackEnd\\BackEnd\\AquaCars.csproj",
+        "projectPath": "C:\\Users\\38349\\Documents\\GitHub\\Aqua-Cars\\BackEnd\\BackEnd\\AquaCars.csproj",
         "packagesPath": "C:\\Users\\38349\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\38349\\source\\repos\\AquaCars\\BackEnd\\BackEnd\\obj\\",
+        "outputPath": "C:\\Users\\38349\\Documents\\GitHub\\Aqua-Cars\\BackEnd\\BackEnd\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\38349\\AppData\\Roaming\\NuGet\\NuGet.Config",

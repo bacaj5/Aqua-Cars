@@ -1,5 +1,6 @@
 ﻿using AquaCars.DTOs.ReservationDTOs;
 using AquaCars.Services.Interfaces;
+using AquaCars.Utility.StaticData;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,7 +19,7 @@ namespace AquaCars.Controllers
         }
 
         [HttpGet]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = UserRoles.Admin)]
         public async Task<IActionResult> GetAllReservations()
         {
             var result = await _reservationService.GetAllReservations();

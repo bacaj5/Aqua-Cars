@@ -1,5 +1,6 @@
 ﻿using AquaCars.DTOs.VechileDTOs;
 using AquaCars.Services.Interfaces;
+using AquaCars.Utility.StaticData;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -30,7 +31,7 @@ namespace AquaCars.Controllers
         }
 
         [HttpPost]
-        [Authorize("Admin")]
+        [Authorize(Roles = UserRoles.Admin)]
         public async Task<IActionResult> AddVehicle([FromForm] AddVehicleDTO dto)
         {
             var result = await _vehicleService.AddVehicle(dto);
@@ -38,7 +39,7 @@ namespace AquaCars.Controllers
         }
 
         [HttpPut]
-        [Authorize("Admin")]
+        [Authorize(Roles = UserRoles.Admin)]
         public async Task<IActionResult> EditVehicle([FromForm] EditVehicleDTO dto)
         {
             var result = await _vehicleService.EditVehicle(dto);
@@ -46,7 +47,7 @@ namespace AquaCars.Controllers
         }
 
         [HttpDelete]
-        [Authorize("Admin")]
+        [Authorize(Roles = UserRoles.Admin)]
         public async Task<IActionResult> DeleteVehicle(DeleteVehicleDTO dto)
         {
             var result = await _vehicleService.DeleteVehicle(dto);

@@ -1,6 +1,7 @@
 ﻿using AquaCars.DTOs.IdentityDTOs;
 using AquaCars.Responses;
 using AquaCars.Services.Interfaces;
+using AquaCars.Utility.StaticData;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -55,7 +56,7 @@ namespace AquaCars.Controllers
         }
 
         [HttpGet("GetAllUsersDetails")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = UserRoles.Admin)]
         public async Task<ActionResult> GetAllUserDetails()
         {
             var result = await _identityService.GetAllUsersDetailsAsync();
@@ -63,7 +64,7 @@ namespace AquaCars.Controllers
         }
 
         [HttpPut("EditUser")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = UserRoles.Admin)]
         public async Task<ActionResult> EditUser(EditUserDTO dto)
         {
             var result = await _identityService.EditUser(dto);
@@ -79,7 +80,7 @@ namespace AquaCars.Controllers
         }
 
         [HttpDelete("DeleteUserByEmail")]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = UserRoles.Admin)]
         public async Task<IActionResult> DeleteUserByEmail(string email)
         {
             var result = await _identityService.DeleteUserByEmail(email);
